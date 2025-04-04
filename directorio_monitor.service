@@ -1,0 +1,12 @@
+[Unit]
+Description=Servicio de Monitoreo de Cambios en Directorios
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/gabriela-a/Documentos/L2_3_C4C257.sh 
+WorkingDirectory=/home/gabriela-a/Documentos
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
